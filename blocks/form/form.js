@@ -273,7 +273,7 @@ function inputDecorator(field, element) {
       input.title = stripTags(field.tooltip, '');
     }
     input.readOnly = field.readOnly;
-    input.autocomplete = field.autoComplete ?? 'off';
+    input.autocomplete = field.autoComplete ?? 'on';
     input.disabled = field.enabled === false;
     if (field.fieldType === 'drop-down' && field.readOnly) {
       input.disabled = true;
