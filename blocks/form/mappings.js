@@ -62,10 +62,6 @@ export default async function componentDecorator(element, fd, container) {
     await loadComponent('file', element, fd, container);
   }
 
-  if (type.endsWith('wizard')) {
-    await loadComponent('wizard', element, fd, container);
-  }
-
   if (getCustomComponents().includes(type) || getOOTBComponents().includes(type)) {
     await loadComponent(type, element, fd, container);
   }
